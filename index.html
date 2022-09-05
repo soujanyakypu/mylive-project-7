@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px 0px;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: "Red Rose", cursive; */
+      }
+      body {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+
+        background-color: #ffffff;
+        min-width: 150vh;
+        min-height: 100vh;
+      }
+
+      nav {
+        position: relative;
+        height: 10vh;
+        top: 5px;
+        left: -60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-inline-end: 10px; */
+      }
+      nav img {
+        display: flex;
+        flex: 1;
+        height: 20px;
+      }
+      nav img:last-child {
+        width: 40px;
+        height: 90px;
+      }
+      nav .nav-items {
+        margin: auto;
+        display: flex;
+        flex: 2;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav h5:first-child {
+        color: #d83838;
+      }
+      nav h5:hover {
+        color: #299732;
+      }
+      .intro-section {
+        min-height: 40vh;
+        min-width: 100vh;
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left-section {
+        position: relative;
+        top: -50px;
+        left: 0px;
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left-section img {
+        position: relative;
+        /* scroll-margin-top: 10 px; */
+        left: 5px;
+        width: 30px;
+      }
+      h3 {
+        position: relative;
+        left: -130px;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .left-section h1 {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        left: -30px;
+        font-weight: 900;
+        font-family: sans-serif;
+      }
+      .right-section {
+        position: relative;
+        display: flex;
+        flex: 1;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+        align-items: center;
+      }
+      .right-section img {
+        width: 80px;
+      }
+
+      .sub-headlines h5 img {
+        display: block;
+        position: relative;
+        top: 20px;
+        left: -30px;
+        font-size: 20px;
+        font-weight: 0;
+        color: #574b4b;
+        /* margin-top: 40px;
+        margin-left: -100px; */
+        /* height: 100%;
+        width: 100%;
+        border-radius: 10px solid #eb5a5a; */
+      }
+      p {
+        margin-top: 40px;
+        margin-left: 30px;
+        color: #9ca49e;
+      }
+      .sub-headline img {
+        margin-top: 0px;
+        margin-left: 0px;
+        display: block;
+        background: #f03737;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+      }
+      .action-btns {
+        position: relative;
+
+        top: 20px;
+        left: -80px;
+        padding: 20px, 20px;
+        border-radius: 10px;
+      }
+      .action-btn {
+        background-color: #eb4d4b;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        color: #ffffff;
+      }
+      .discount {
+        position: relative;
+        top: 170px;
+        z-index: 1;
+      }
+      .discount-content {
+        position: relative;
+        font-size: 10px;
+        color: #000000;
+        top: 110px;
+        left: 20px;
+        z-index: 2;
+      }
+      .right-section img:last-child {
+        position: relative;
+        bottom: 120px;
+        width: 350px;
+        height: 300px;
+        zindex: -1;
+      }
+      .right-section .action-btn {
+        position: relative;
+        bottom: 120px;
+      }
+      .dot {
+        display: inline-block;
+        flex-direction: row;
+        position: relative;
+        bottom: 140px;
+         z-index: 4;
+         width: 20px;
+        height: 20px;
+        border-radius: 50%;
+         background-color:yellow ;
+        }
+        .dot yellow-dot{
+          background-color:yellow;
+          width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        z-index: 4;
+        }
+         .dot tomato-dot{
+          background-color:tomato;
+          width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        z-index: 4;
+        }
+         .dot black-dot{
+          background-color:black;
+          width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        z-index: 4;
+          }
+
+        .
+    </style>
+    <title>Product Home Page</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.svg" alt="logo" />
+      <div class="nav-items">
+        <h5 class="nav-item active-item">Home</h5>
+        <h5 class="nav-item">Product</h5>
+        <h5 class="nav-item">Price</h5>
+        <h5 class="nav-item">About</h5>
+      </div>
+      <img src="./images/actions.svg" alt="actions" />
+    </nav>
+    <div class="intro-section">
+      <div class="left-section">
+        <h3>
+          New Product
+          <img src="./images/circles.svg" alt="circles" />
+        </h3>
+        <h1>Wireless Headphone</h1>
+        <div class="sub-headlines">
+          <h5 class="sub-headline">
+            <img src="./images/plus.svg" alt="plus" /> Clear Sound
+          </h5>
+          <h5 class="sub-headline">
+            <img src="./images/plus.svg" alt="plus" /> FM Function
+          </h5>
+          <h5 class="sub-headline">
+            <img src="./images/plus.svg" alt="plus" /> Up To 11 Hours Playtime
+          </h5>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="action-btns">
+          <button class="action-btn">Go Shopping</button>
+          <button class="action-btn">See Catalog</button>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="headphone-div">
+          <img src="./images/discount.svg" alt="discount" class="discount" />
+          <div class="discount-content">
+            <h4>Discount</h4>
+            <h1>50%</h1>
+          </div>
+          <img src="./images/headphones.jpg" alt="headphone" />
+        </div>
+        <div class="dots">
+          <div class="dot yellow-dot"></div>
+          <div class="dot tomato-dot"></div>
+          <div class="dot black-dot"></div>
+        </div>
+        <button class="action-btn">Add to chart</button>
+      </div>
+    </div>
+  </body>
+</html>
